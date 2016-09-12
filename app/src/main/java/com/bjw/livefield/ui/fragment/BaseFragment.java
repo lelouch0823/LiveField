@@ -37,10 +37,10 @@ public abstract class BaseFragment extends RxFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        initdate();
+        initDate();
     }
 
-    private void initdate() {
+    public void initDate() {
 
     }
 

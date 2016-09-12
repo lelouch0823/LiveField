@@ -1,4 +1,4 @@
-package com.bjw.livefield.ui.activity;
+package com.bjw.livefield.ui.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

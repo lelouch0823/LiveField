@@ -26,30 +26,23 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
     compile project(':library')
     compile 'com.android.support:appcompat-v7:24.2.0'
-
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxjava:1.1.8'
-
     compile 'com.trello:rxlifecycle:0.7.0'
     compile 'com.trello:rxlifecycle-components:0.7.0'
     compile 'com.trello:rxlifecycle-android:0.7.0'
-
     compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.4.0'
     compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
     compile 'com.jakewharton.rxbinding:rxbinding-design:0.4.0'
     compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
     compile 'com.jakewharton.rxbinding:rxbinding-recyclerview-v7:0.4.0'
-
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
-
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.0-RC1'
-
     compile 'com.jakewharton:butterknife:8.4.0'
-
     compile 'com.orhanobut:logger:1.15'
-
     compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.jiechic.library:xUtils:2.6.14'
 }

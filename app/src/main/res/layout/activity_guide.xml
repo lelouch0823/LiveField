@@ -22,7 +22,7 @@
         android:layout_marginBottom="50dp"
         android:background="@drawable/button_red_selector"
         android:text="@string/guide_btn"
-        android:textColor="@color/btn_text_color_guide"/>
+        android:textColor="@color/text_color_guide_btn"/>
 <RelativeLayout
     android:layout_centerHorizontal="true"
     android:layout_alignParentBottom="true"

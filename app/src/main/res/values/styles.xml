@@ -10,4 +10,16 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="BottomTabItemStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textColor">@color/text_color_main_content_rb</item>
+    </style>
+
 </resources>

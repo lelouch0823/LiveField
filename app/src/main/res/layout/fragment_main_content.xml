@@ -1,7 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_tab_bg">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:drawableTop="@drawable/tab_home_rb_selector"
+            android:text="@string/main_content_bottom_home_text"
+            style="@style/BottomTabItemStyle"/>
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            android:drawableTop="@drawable/tab_newscenter_rb_selector"
+            android:text="@string/main_content_bottom_news_text"
+            style="@style/BottomTabItemStyle"/>
+
+        <RadioButton
+            android:id="@+id/rb_smart"
+            android:drawableTop="@drawable/tab_smartservice_rb_selector"
+            android:text="@string/main_content_bottom_smart_text"
+            style="@style/BottomTabItemStyle"/>
+
+        <RadioButton
+            android:id="@+id/rb_gov"
+            android:drawableTop="@drawable/tab_govaffairs_rb_selector"
+            android:text="@string/main_content_bottom_gov_text"
+            style="@style/BottomTabItemStyle"/>
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            android:drawableTop="@drawable/tab_setting_rb_selector"
+            android:text="@string/main_content_bottom_setting_text"
+            style="@style/BottomTabItemStyle"/>
+
+    </RadioGroup>
 </LinearLayout>

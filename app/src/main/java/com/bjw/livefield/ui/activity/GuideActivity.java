@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.bjw.livefield.R;
+import com.bjw.livefield.ui.adapter.GuideAdapter;
 import com.bjw.livefield.utils.SPUtil;
 import com.jakewharton.rxbinding.view.RxView;
 
