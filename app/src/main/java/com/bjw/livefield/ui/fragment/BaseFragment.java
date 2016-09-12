@@ -23,6 +23,7 @@ public abstract class BaseFragment extends RxFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle
             savedInstanceState) {
         mRootView = initFragmentView();
+        initDate();
         return mRootView;
     }
 
@@ -37,7 +38,7 @@ public abstract class BaseFragment extends RxFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        initDate();
+
     }
 
     public void initDate() {
