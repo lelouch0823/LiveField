@@ -4,6 +4,7 @@ apply plugin: 'android-apt'
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.bjw.livefield"
@@ -45,4 +46,5 @@ dependencies {
     compile 'com.orhanobut:logger:1.15'
     compile 'com.android.support:support-v4:24.2.0'
     compile 'com.jiechic.library:xUtils:2.6.14'
+    compile 'com.google.code.gson:gson:2.7'
 }

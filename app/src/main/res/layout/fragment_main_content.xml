@@ -4,21 +4,23 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <android.support.v4.view.ViewPager
+    <com.bjw.livefield.view.NoScrollViewPager
         android:id="@+id/vp_main_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-    </android.support.v4.view.ViewPager>
+        android:layout_weight="7">
+    </com.bjw.livefield.view.NoScrollViewPager>
 
     <RadioGroup
         android:id="@+id/rg_main_bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:background="@drawable/bottom_tab_bg">
 
         <RadioButton
+            android:checked="true"
             android:id="@+id/rb_home"
             android:drawableTop="@drawable/tab_home_rb_selector"
             android:text="@string/main_content_bottom_home_text"
@@ -47,6 +49,5 @@
             android:drawableTop="@drawable/tab_setting_rb_selector"
             android:text="@string/main_content_bottom_setting_text"
             style="@style/BottomTabItemStyle"/>
-
     </RadioGroup>
 </LinearLayout>

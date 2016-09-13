@@ -4,7 +4,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="main_content_bottom_home_text">新闻中心</string>
+    <string name="main_content_bottom_home_text">首页</string>
     <string name="main_content_bottom_news_text">新闻中心</string>
     <string name="main_content_bottom_smart_text">智慧服务</string>
     <string name="main_content_bottom_gov_text">政务</string>

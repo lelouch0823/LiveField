@@ -24,7 +24,6 @@ public class ContentAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        super.destroyItem(container, position, object);
         View view = mPagers.get(position).initView();
         container.removeView(view);
     }

@@ -35,6 +35,16 @@ public class NetManager {
         return retrofit.create(service);
     }
 
+    public <S> S create(Class<S> service,String uri) {
+        Retrofit retrofit = new Retrofit.Builder()
+                .client(getOkHttpClient())
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .baseUrl(uri)
+                .build();
+        return retrofit.create(service);
+    }
+
     /**
      * 解析接口中的BASE_URL，解决BASE_URL不一致的问题
      *

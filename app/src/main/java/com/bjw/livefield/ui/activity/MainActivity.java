@@ -12,7 +12,7 @@ import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 public class MainActivity extends SlidingFragmentActivity {
 
     public static final String CONTENT_FRAGMENT = "the content fragment";
-    private static final String LEFT_MENU_FRAGMENT = "the leftmenu fragment";
+    public static final String LEFT_MENU_FRAGMENT = "the leftmenu fragment";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,5 +35,10 @@ public class MainActivity extends SlidingFragmentActivity {
                 .replace(R.id.fragment_menu_container, LeftMenuFragment.newInstance(),
                         LEFT_MENU_FRAGMENT)
                 .commit();
+    }
+
+    public LeftMenuFragment getLeftFragment() {
+        return (LeftMenuFragment) getSupportFragmentManager()
+                .findFragmentByTag(LEFT_MENU_FRAGMENT);
     }
 }

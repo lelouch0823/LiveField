@@ -15,6 +15,7 @@ import com.bjw.livefield.ui.base.impl.NewsCenterPager;
 import com.bjw.livefield.ui.base.impl.SettingPager;
 import com.bjw.livefield.ui.base.impl.SmartServicePager;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -27,7 +28,7 @@ public class MainContentFragment extends BaseFragment {
     private RadioButton mRbSmart;
     private RadioButton mRbGov;
     private RadioButton mRbSetting;*/
-    private List<BasePager> mPagers;
+    public List<BasePager> mPagers;
     public RadioGroup mGroup;
 
     @Override
@@ -75,12 +76,15 @@ public class MainContentFragment extends BaseFragment {
 
     @Override
     public void initDate() {
+        mPagers = new ArrayList<>();
         mPagers.add(new HomePager(mActivity));
         mPagers.add(new NewsCenterPager(mActivity));
         mPagers.add(new SmartServicePager(mActivity));
         mPagers.add(new GovAffairsPager(mActivity));
         mPagers.add(new SettingPager(mActivity));
         mVpMainContent.setAdapter(new ContentAdapter(mPagers, mActivity));
+        mPagers.get(0).initDate();
+        setSlidingMenuEnable(false);
         mVpMainContent.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -103,8 +107,6 @@ public class MainContentFragment extends BaseFragment {
 
             }
         });
-        mPagers.get(0).initDate();
-        setSlidingMenuEnable(false);
     }
 
     private void setSlidingMenuEnable(boolean enable) {
