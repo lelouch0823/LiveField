@@ -6,6 +6,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.bjw.livefield.R;
 import com.bjw.livefield.ui.base.BasePager;
 
 /**
@@ -28,7 +29,7 @@ public class HomePager extends BasePager {
         mFlContainer.addView(view);//给帧布局添加对象
 
         //修改标题
-        mTvTitle.setText("智慧北京");
+        mTvTitle.setText(R.string.home_pager_title);
 
         //隐藏菜单按钮
         mBtnMenu.setVisibility(View.GONE);

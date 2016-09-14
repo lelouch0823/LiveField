@@ -9,6 +9,7 @@ import com.bjw.livefield.R;
 import com.bjw.livefield.domain.NewsMenu;
 import com.bjw.livefield.ui.activity.MainActivity;
 import com.bjw.livefield.ui.adapter.LeftMenuAdapter;
+import com.bjw.livefield.ui.base.impl.NewsCenterPager;
 
 import java.util.ArrayList;
 
@@ -43,10 +44,18 @@ public class LeftMenuFragment extends BaseFragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 mCurrentClick = position;
                 mLeftMenuAdapter.notifyDataSetChanged();
+                setMenuDetailPager(position);
                 toggle();
             }
         });
 
+    }
+
+    private void setMenuDetailPager(int position) {
+        MainActivity mainUI = (MainActivity) mActivity;
+        MainContentFragment fragment = mainUI.getContentFragment();
+        NewsCenterPager pager = fragment.getNewsCenterPager();
+        pager.setMenuDetailPager(position);
     }
 
     private void toggle() {

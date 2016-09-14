@@ -23,11 +23,11 @@ import java.util.List;
  */
 public class MainContentFragment extends BaseFragment {
     private ViewPager mVpMainContent;
-/*    private RadioButton mRbHome;
-    private RadioButton mRbNews;
-    private RadioButton mRbSmart;
-    private RadioButton mRbGov;
-    private RadioButton mRbSetting;*/
+    /*    private RadioButton mRbHome;
+        private RadioButton mRbNews;
+        private RadioButton mRbSmart;
+        private RadioButton mRbGov;
+        private RadioButton mRbSetting;*/
     public List<BasePager> mPagers;
     public RadioGroup mGroup;
 
@@ -83,11 +83,11 @@ public class MainContentFragment extends BaseFragment {
         mPagers.add(new GovAffairsPager(mActivity));
         mPagers.add(new SettingPager(mActivity));
         mVpMainContent.setAdapter(new ContentAdapter(mPagers, mActivity));
-        mPagers.get(0).initDate();
         setSlidingMenuEnable(false);
         mVpMainContent.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            public void onPageScrolled(int position, float positionOffset, int
+                    positionOffsetPixels) {
 
             }
 
@@ -95,7 +95,7 @@ public class MainContentFragment extends BaseFragment {
             public void onPageSelected(int position) {
                 BasePager basePager = mPagers.get(position);
                 basePager.initDate();
-                if (position == mPagers.size() - 1) {
+                if (position == 0 || position == mPagers.size() - 1) {
                     setSlidingMenuEnable(false);
                 } else {
                     setSlidingMenuEnable(true);
@@ -121,5 +121,9 @@ public class MainContentFragment extends BaseFragment {
         MainContentFragment fragment = new MainContentFragment();
         fragment.setArguments(args);
         return fragment;
+    }
+
+    public NewsCenterPager getNewsCenterPager() {
+        return (NewsCenterPager) mPagers.get(1);
     }
 }

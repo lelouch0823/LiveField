@@ -31,6 +31,9 @@ public class ContentAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         View view = mPagers.get(position).initView();
+        if (position == 0) {
+            mPagers.get(position).initDate();
+        }
         container.addView(view);
         return view;
     }

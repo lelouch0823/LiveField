@@ -31,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceStaBundle);
         setContentView(R.layout.activity_splash);
         initView();
-        fullscreen();
+        //fullscreen();
         startAnimations();
     }
 
@@ -95,7 +95,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void startDelay(final Class activity) {
-        mSubscribe = Observable.timer(2000, TimeUnit.MILLISECONDS)
+        mSubscribe = Observable.timer(500, TimeUnit.MILLISECONDS)
                 .subscribe(new Action1<Long>() {
                     @Override
                     public void call(Long aLong) {

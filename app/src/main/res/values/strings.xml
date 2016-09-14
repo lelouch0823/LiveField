@@ -10,4 +10,5 @@
     <string name="main_content_bottom_gov_text">政务</string>
     <string name="main_content_bottom_setting_text">设置</string>
     <string name="title_bar_text">标题</string>
+    <string name="home_pager_title">LiveField</string>
 </resources>
