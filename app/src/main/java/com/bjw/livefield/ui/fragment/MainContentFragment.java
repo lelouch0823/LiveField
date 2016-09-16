@@ -8,6 +8,7 @@ import android.widget.RadioGroup;
 import com.bjw.livefield.R;
 import com.bjw.livefield.ui.activity.MainActivity;
 import com.bjw.livefield.ui.adapter.ContentAdapter;
+import com.bjw.livefield.ui.base.BaseFragment;
 import com.bjw.livefield.ui.base.BasePager;
 import com.bjw.livefield.ui.base.impl.GovAffairsPager;
 import com.bjw.livefield.ui.base.impl.HomePager;

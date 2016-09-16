@@ -154,7 +154,7 @@ public class NewsCenterPager extends BasePager {
     //使用Gson
     private void processData(String result) {
         MainActivity mainUI = (MainActivity) mActivity;
-        final LeftMenuFragment leftFragment = (LeftMenuFragment) mainUI
+        LeftMenuFragment leftFragment = (LeftMenuFragment) mainUI
                 .getSupportFragmentManager().findFragmentByTag
                         (MainActivity.LEFT_MENU_FRAGMENT);
         Gson gson = new Gson();

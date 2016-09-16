@@ -5,12 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
     tools:context=".ui.activity.SplashActivity">
 
     <ImageView
         android:id="@+id/img_splash_pic"
-        android:background="@drawable/splash_bg_newyear"
-        android:src="@drawable/splash_horse_newyear"
+        android:background="@drawable/splash_two"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <android.support.v4.widget.DrawerLayout

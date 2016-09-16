@@ -9,6 +9,7 @@ import com.bjw.livefield.R;
 import com.bjw.livefield.domain.NewsMenu;
 import com.bjw.livefield.ui.activity.MainActivity;
 import com.bjw.livefield.ui.adapter.LeftMenuAdapter;
+import com.bjw.livefield.ui.base.BaseFragment;
 import com.bjw.livefield.ui.base.impl.NewsCenterPager;
 
 import java.util.ArrayList;

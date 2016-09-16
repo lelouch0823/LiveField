@@ -1,4 +1,4 @@
-package com.bjw.livefield.ui.activity;
+package com.bjw.livefield.ui.base;
 
 import com.trello.rxlifecycle.components.support.RxFragmentActivity;
 

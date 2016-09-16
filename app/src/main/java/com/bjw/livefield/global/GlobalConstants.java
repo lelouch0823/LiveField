@@ -7,5 +7,5 @@ public class GlobalConstants {
 	//原生模拟器:10.0.2.2; Genymotion:10.0.3.2
 	public static final String SERVER_URL = "http://10.0.2.2/zhbj/";
 	//分类接口地址
-	public static final String CATEGORY_URL = SERVER_URL + "categories.json";
+	public static final String CATEGORY_URL = SERVER_URL + "/categories.json";
 }

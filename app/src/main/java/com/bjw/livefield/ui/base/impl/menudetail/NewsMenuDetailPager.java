@@ -12,8 +12,6 @@ import com.bjw.livefield.ui.adapter.NewsMenuDetailAdapter;
 import com.bjw.livefield.ui.base.BaseMenuDetailPager;
 import com.jakewharton.rxbinding.support.v4.view.RxViewPager;
 import com.jakewharton.rxbinding.view.RxView;
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnChildClick;
 import com.orhanobut.logger.Logger;
 import com.viewpagerindicator.TabPageIndicator;
@@ -28,13 +26,13 @@ import rx.functions.Action1;
 public class NewsMenuDetailPager extends BaseMenuDetailPager {
 
     public final ArrayList<NewsMenu.NewsTabData> mChildren;
-    @ViewInject(R.id.vp_news_menu_detail)
+    //@ViewInject(R.id.vp_news_menu_detail)
     private ViewPager mViewPager;
 
-    @ViewInject(R.id.tp_indicator)
+    //@ViewInject(R.id.tp_indicator)
     private TabPageIndicator mIndicator;
 
-    @ViewInject(R.id.btn_next_pager)
+    //@ViewInject(R.id.btn_next_pager)
     private ImageButton mButton;
 
 
@@ -51,7 +49,10 @@ public class NewsMenuDetailPager extends BaseMenuDetailPager {
     @Override
     public View initViews() {
         View view = View.inflate(mActivity, R.layout.pager_news_menu_detail, null);
-        ViewUtils.inject(this, view);
+        mViewPager = (ViewPager) view.findViewById(R.id.vp_news_menu_detail);
+        mIndicator = (TabPageIndicator) view.findViewById(R.id.tp_indicator);
+        mButton = (ImageButton) view.findViewById(R.id.btn_next_pager);
+        //ViewUtils.inject(this, view);
         RxView.clicks(mButton).subscribe(new Action1<Void>() {
             @Override
             public void call(Void aVoid) {

@@ -1,4 +1,4 @@
-package com.bjw.livefield.ui.fragment;
+package com.bjw.livefield.ui.base;
 
 import android.app.Activity;
 import android.content.Context;
