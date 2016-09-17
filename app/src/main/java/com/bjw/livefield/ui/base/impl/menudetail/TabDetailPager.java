@@ -217,6 +217,7 @@ public class TabDetailPager extends BaseMenuDetailPager {
                         textView.setTextColor(mActivity.getResources().getColor(R.color
                                 .colorGray));
                         String title = news.title;
+
                         String url = news.url;
                         Intent intent = NewsDetailActivity.startActivity(mActivity, title,url);
                         mActivity.startActivity(intent);
